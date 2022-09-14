@@ -11,8 +11,10 @@ public class User{
     @Indexed( unique = true )
     String email;
 
+    public User() {
+    }
 
-    public User(String id, String name, String email,String lastName,String createdAt){
+    public User(String id, String name, String email, String lastName, String createdAt){
         this.id =id;
         this.name = name;
         this.email = email;

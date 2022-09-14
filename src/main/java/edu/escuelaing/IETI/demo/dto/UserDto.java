@@ -4,6 +4,9 @@ import java.io.Serializable;
 public class UserDto implements Serializable{
     String id,name,email,lastName,createdAt;
 
+    public UserDto() {
+    }
+
     private static final long serialVersionUID = 1L;
     public UserDto(String id, String name, String email, String lastName, String createdAt){
         this.id =id;

@@ -18,11 +18,9 @@ import java.util.stream.Collectors;
 @Service
 public class UserServiceMongo implements UserService {
 
-    private final UserRepository userRepository;
+    @Autowired
+    private UserRepository userRepository;
 
-    public UserServiceMongo(@Autowired UserRepository userRepository){
-        this.userRepository = userRepository;
-    }
     @Override
     public User create(User user){
         if(user.getId().equals("")){
